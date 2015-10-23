@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p,h5 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        h5::after{
+        content: " End";
+            background: yellow;
+            font-style: italic;
+        
+        
+        }
+        
+        p::after {
+            content: "nayon..";
+            color: red;
+            font-weight: bolder;
+        }
+        
+        .one {
+            text-align: center;
+        }
+        
+        .one h1::before {
+            content: "From nayon";
+            font-style: italic;
+            max-width: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        ol,ul {
+            list-style: none;
+            font-size: 20px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        
+        .list li:nth-child(2)::after {
+            content: " true";
+            color: brown;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+         .list li::before {
+            content: "Hi! i am ";
+            font-style: oblique;
+            color: blue;
+            background: black;
+        }
+        .list li:nth-child(1)::after{
+            content: " is that! ";
+            font-style: oblique;
+            color: blue;
+            background: gray;
+        }
+         .list li:nth-child(3)::after{
+            content: "isn't that";
+            font-style: oblique;
+            color: blue;
+            background: brown;
+        }
+        .olist li::after{
+            content: " yes! bye ";
+            font-style: oblique;
+            color: blue;
+            
+        }
+    </style>
+</head>
+
+<body>
+   
+    <p>this is me </p>
+    <div class="one">
+        <h1> Hellow friends</h1>
+    </div>
+    <ul class="list">
+        <li> no. one.</li>
+        <li> no. two.</li>
+        <li> no. three.</li>
+    </ul>
+    <ol class="olist">
+        <li>Lorem ipsum dolor sit amet, adipisicing elit..</li>
+        <li>adipisicing elit. Eaque, quo!</li>
+        <li>adipisicing elit. Eaque, quo!</li>
+        <li>quo! Rem animi placeat quas ipsam, accusamus, maxime eaque et vero nisi</li>
+        
+    </ol>
+    <div class="lower">
+        <h5>Lorem ipsum</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt perspiciatis illo dignissimos nulla magnam commodi voluptate eum sunt porro officia inventore id, unde culpa, quasi similique et hic itaque. Ut?</p>
+        
+        
+        
+    </div>
+    
+</body>
+
+</html>
